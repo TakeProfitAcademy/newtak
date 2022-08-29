@@ -117,7 +117,7 @@ async def course_prog_antichaos(message: types.Message, state: FSMContext):
 # Тарифы антихаос
 @dp.message_handler(text="Тарифы", state=MainStates.antichaos)
 async def tarifs_antichaos(message: types.Message, state: FSMContext):
-    with open('antop.png', 'rb') as file:
+    with open('crpop.png', 'rb') as file:
         await bot.send_photo(message.chat.id, file)
     await message.answer("Выберете способ оплаты!", reply_markup=op)
     
@@ -134,7 +134,7 @@ async def course_prog_crypto(message: types.Message, state: FSMContext):
 # Тарифы криптофигни
 @dp.message_handler(text="Тарифы", state=MainStates.crypto)
 async def tarifs_crypto(message: types.Message, state: FSMContext):
-    with open('crpop.png', 'rb') as file:
+    with open('antop.png', 'rb') as file:
         await bot.send_photo(message.chat.id, file)
     await message.answer("Выберете способ оплаты!", reply_markup=op)
 
